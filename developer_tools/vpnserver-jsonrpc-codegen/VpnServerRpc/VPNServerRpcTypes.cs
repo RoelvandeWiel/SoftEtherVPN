@@ -5378,4 +5378,26 @@ namespace SoftEther.VPNServerRpc
         public string PlainTextPassword_str;
     }
 
+    /// <summary>
+    /// Wgk enum
+    /// </summary>
+    public class VpnRpcEnumWgk
+    {
+        /// <summary>
+        /// WireGuard key
+        /// </summary>
+        public string WgKey_str;
+
+        /// <summary>
+        /// The Virtual Hub name
+        /// </summary>
+        public string HubName_str;
+
+        /// <summary>
+        /// The User name
+        /// </summary>
+        public string UserName_str;
+
+    }
+
 }

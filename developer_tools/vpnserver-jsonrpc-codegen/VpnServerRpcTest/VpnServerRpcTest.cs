@@ -3733,4 +3733,20 @@ class VPNRPCTest
         string str = Newtonsoft.Json.JsonConvert.SerializeObject(obj, Newtonsoft.Json.Formatting.Indented, setting);
         Console.WriteLine(str);
     }
+
+    /// <summary>
+    /// API test for 'GetEnumWgk', Get WireGuard keys
+    /// </summary>
+    public void Test_GetEnumWgk()
+    {
+        Console.WriteLine("Begin: Test_GetEnumWgk");
+
+        VpnRpcEnumWgk out_wgk_enum = api.GetEnumWgk();
+
+        print_object(out_wgk_enum);
+
+        Console.WriteLine("End: Test_GetEnumWgk");
+        Console.WriteLine("-----");
+        Console.WriteLine();
+    }
 }

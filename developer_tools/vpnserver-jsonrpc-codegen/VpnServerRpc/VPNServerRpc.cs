@@ -1394,6 +1394,15 @@ namespace SoftEther.VPNServerRpc
         /// </summary>
         public VpnVgsConfig GetVgsConfig() => GetVgsConfigAsync().Result;
 
+        /// <summary>
+        /// Get the WireGuard keys, the specific hub and the user (Async mode)
+        /// </summary>
+        public async Task<VpnRpcEnumWgk> GetEnumWgkAsync() => await CallAsync<VpnRpcEnumWgk>("GetEnumWgk", new VpnRpcEnumWgk());
+
+        /// <summary>
+        /// Get the WireGuard keys, the specific hub and the user (Async mode)
+        /// </summary>
+        public VpnRpcEnumWgk GetEnumWgk() => GetEnumWgkAsync().Result;
 
     }
 }
